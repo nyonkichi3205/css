@@ -4,7 +4,7 @@ h1 {
   background: #f4f4f4;/*背景色*/
   border-left: solid 5px #7db4e6;/*左線*/
   border-bottom: solid 3px #d7d7d7;/*下*/
-  margin: 0px 15px 0px 15px;
+  margin: 0px 25px 0px 25px;
 }
 h3 {
   position: relative;/*相対位置*/
@@ -190,7 +190,7 @@ p1:after {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
 }
 .box30 .box-title {
-    font-size: 3em;
+    font-size: 2em;
     background: #3498db;
     padding: 4px;
     text-align: center;

@@ -1,39 +1,4 @@
-h1 {
-  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
-  color: #ffffff;/*文字色*/
-  background: #00bfff;/*背景色*/
-  border-left: solid 10px #ff8c00;/*左線*/
-  border-bottom: solid 3px #d7d7d7;/*下線*/
-}
-
-.kakomi-tab2 {
- position: relative;
- margin: 3em auto;
- padding: 1.2em 1em 1em;
- font-weight: bold;
- color: #555555;/*文字色*/
- font-size: 25px; 
- width: 90%;
- background-color: #fff; /*BOX背景色 */
- border: 2px solid #00bfff; /* 枠線の太さ・色 */
- box-shadow: 2px 2px 2px #ccc; /* 影の色 */
-}
-.title-tab2 {
- position: absolute;
- display: inline-block;
- top: -31px; /*タブ調整 */
- left: -2px; /*タブ調整 */
- padding: 1px 10px;
- height: 30px;
- font-weight: bold;
- font-size: 20px;
- color: #fff; /* タイトル色 */
- background-color: #00bfff; /* タイトル背景色 */
- border-radius: 8px 8px 0 0;
-}
-
-
-/* メモ　クリップ　Ａ */
+/* メモクリップ */
 .clip-box-a {
  position: relative;
  margin: 2em auto;
@@ -71,27 +36,44 @@ h1 {
 }
 
 
-.box30 {
-    margin: 2em 0;
-    background: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
-}
-.box30 .box-title {
-    font-size: 2em;
-    background: #3498db;
-    padding: 4px;
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    border-left: 15px solid #ff8c00;
-}
-.box30 p {
-    padding: 15px 20px;
-    margin: 0;
+/* 見出し */
+h1 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #ffffff;/*文字色*/
+  background: #00bfff;/*背景色*/
+  border-left: solid 10px #ff8c00;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
 }
 
+/* 囲みタブ（内容） */
+.kakomi-tab2 {
+ position: relative;
+ margin: 3em auto;
+ padding: 1.2em 1em 1em;
+ font-weight: bold;
+ color: #555555;/*文字色*/
+ font-size: 25px; 
+ width: 90%;
+ background-color: #fff; /*BOX背景色 */
+ border: 2px solid #00bfff; /* 枠線の太さ・色 */
+ box-shadow: 2px 2px 2px #ccc; /* 影の色 */
+}
+/* 囲みタブ（タイトル） */
+.title-tab2 {
+ position: absolute;
+ display: inline-block;
+ top: -31px; /*タブ調整 */
+ left: -2px; /*タブ調整 */
+ padding: 1px 10px;
+ height: 30px;
+ font-weight: bold;
+ font-size: 20px;
+ color: #fff; /* タイトル色 */
+ background-color: #00bfff; /* タイトル背景色 */
+ border-radius: 8px 8px 0 0;
+}
 
+/* BOX（赤） */
 .box9 {
     padding: 0.5em 1em;
     margin: 2em 0;

@@ -10,7 +10,7 @@ body {
 header {
    padding: 30px 4% 10px;
    position: fixed;
-   top: 0;
+   top: 50;
    width: 100%;
    background-color: #fff;
    display: flex;

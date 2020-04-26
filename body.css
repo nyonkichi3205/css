@@ -1,0 +1,178 @@
+h1 {
+  position: relative;/*相対位置*/
+  padding: 0.5em 0.5em 0.5em 2.1em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+  color: #ffffff;/*文字色*/
+  background: #3498db;
+  border-left: 10px solid #ff8c00;
+}
+h1:before {
+  font-family: "Font Awesome 5 Free";/*忘れずに*/
+  content: "\f544";/*アイコンのユニコード*/
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0.45em;/*アイコンの位置*/
+  top: 0.45em;/*アイコンの位置*/
+  color: #ffffff; /*アイコン色*/
+}
+h3 {
+  position: relative;/*相対位置*/
+  padding: 0.5em 0.5em 0.5em 2em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+  color: #ffffff;/*文字色*/
+  background: #c0c0c0;
+  border-left: 10px solid #3498db;
+}
+h3:before {
+  font-family: "Font Awesome 5 Free";/*忘れずに*/
+  content: "\f0ad";/*アイコンのユニコード*/
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0.45em;/*アイコンの位置*/
+  top: 0.45em;/*アイコンの位置*/
+  color: #ffffff; /*アイコン色*/
+}
+p1 {
+  position: relative;
+  color: black;
+  background: #d0ecff;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+}
+p1:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  content: '\f00c Check';
+  background: #2196F3;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 3px 7px 1px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+.list_test-wrap {
+    list-style:  none;  /* デフォルトのアイコンを消す */
+    margin:  0;         /* デフォルト指定上書き */
+    padding: 0;         /* デフォルト指定上書き */
+}
+.list_test:before {
+    content:  "";     /* 空の要素作成 */
+    width: 20px;                /* 幅指定 */
+    height: 20px;               /* 高さ指定 */
+    display:  inline-block;     /* インラインブロックにする */
+    background-color: #0074bf;  /* 背景色指定 */
+    position:  relative;        /* 位置調整 */
+    top: 3px;                   /* 位置指定 */
+    border-radius:  50%;        /* 要素を丸くする */
+    margin-right: 5px;          /* 余白指定 */
+}
+.list_test {
+    padding:  10px;             /* 余白指定 */
+    background-color:  #65ace4; /* 背景色指定 */
+    border-radius:  10px;       /* 角丸指定 */
+    margin-bottom: 5px;         /* 要素と要素の間指定 */
+    color: #fff;                /* 文字色指定 */
+    font-size:  20px;           /* 文字サイズ指定 */
+}
+.kakomi-tab2 {
+ position: relative;
+ margin: 3em auto;
+ padding: 1.2em 1em 1em;
+ font-weight: bold;
+ color: #8d93c8;/*文字色*/
+ width: 90%;
+ background-color: #fff; /*BOX背景色 */
+ border: 2px solid #8d93c8; /* 枠線の太さ・色 */
+ box-shadow: 2px 2px 2px #ccc; /* 影の色 */
+}
+.title-tab2 {
+ position: absolute;
+ display: inline-block;
+ top: -31px; /*タブ調整 */
+ left: -2px; /*タブ調整 */
+ padding: 1px 10px;
+ height: 30px;
+ font-weight: bold;
+ font-size: 20px;
+ color: #fff; /* タイトル色 */
+ background-color: #8d93c8; /* タイトル背景色 */
+ border-radius: 8px 8px 0 0;
+}
+/* メモ　クリップ　Ａ */
+.clip-box-a {
+ position: relative;
+ margin: 2em auto;
+ padding: 15px 35px 15px 25px;
+ width: 90%; /* ボックス幅 */
+ background-color: #fff; /* ボックス背景色 */
+ color: #555555; /* 文章色 */
+ font-weight: bold;
+ font-size: 20px;
+ border: 1px solid #ccc; /* 枠線 */
+ box-shadow: 1px 1px 1px #acacac; /* 影の色 */
+}
+.clip-box-a::before {
+ position: absolute;
+ content: '';
+ top: -15px;
+ right: 10px;
+ height: 55px;
+ width: 15px;
+ border: 3px solid #555555; /*クリップ色 */
+ background-color: none;
+ border-radius: 12px;
+ box-shadow: 1px 1px 2px #999;
+ transform: rotate(10deg);
+ z-index: 1;
+}
+.clip-box-a::after {
+ position: absolute;
+ content: '';
+ top: 0px;
+ width: 10px; 
+ right: 20px;
+ border: solid 5px #fff; /*背景色と同じ色にする*/
+ z-index: 2;
+}
+.box9 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #ff7d6e;
+    background: #ffebe9;
+    border-top: solid 10px #ff7d6e;
+}
+.box9 p {
+    margin: 0; 
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+}
+.box28 {
+    position: relative;
+    margin: 2em 0;
+    padding: 25px 10px 7px;
+    border: solid 2px #FFC107;
+}
+.box28 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #FFC107;
+    color: #ffffff;
+    font-weight: bold;
+}
+.box28 p {
+    margin: 0; 
+    padding: 0;
+}

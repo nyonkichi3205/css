@@ -1,19 +1,10 @@
 h1 {
-  position: relative;/*相対位置*/
-  padding: 0.5em 0.5em 0.5em 2.1em;/*アイコン分のスペース*/
-  line-height: 1.4;/*行高*/
-  color: #ffffff;/*文字色*/
-  background: #3498db;
-  border-left: 10px solid #ff8c00;
-}
-h1:before {
-  font-family: "Font Awesome 5 Free";/*忘れずに*/
-  content: "\f544";/*アイコンのユニコード*/
-  position: absolute;/*絶対位置*/
-  font-size: 1em;/*サイズ*/
-  left: 0.45em;/*アイコンの位置*/
-  top: 0.45em;/*アイコンの位置*/
-  color: #ffffff; /*アイコン色*/
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下*/
+  margin: 0px 15px 0px 15px;
 }
 h3 {
   position: relative;/*相対位置*/
@@ -199,13 +190,14 @@ p1:after {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
 }
 .box30 .box-title {
-    font-size: 1.2em;
+    font-size: 3em;
     background: #3498db;
     padding: 4px;
     text-align: center;
     color: #FFF;
     font-weight: bold;
     letter-spacing: 0.05em;
+    border-left: 15px solid #ff8c00;
 }
 .box30 p {
     padding: 15px 20px;

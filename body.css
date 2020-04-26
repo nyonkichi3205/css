@@ -32,6 +32,13 @@ h3:before {
   top: 0.45em;/*アイコンの位置*/
   color: #ffffff; /*アイコン色*/
 }
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 p1 {
   position: relative;
   color: black;

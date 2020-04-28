@@ -60,6 +60,8 @@ h1 {
   background: #00bfff;/*背景色*/
   border-bottom: solid 3px #d7d7d7;/*下線*/
   text-align: center;
+  border-left: solid 15px #ffaf58;
+  border-right: solid 15px #ffaf58;
 }
 
 /* 見出し（題目） */

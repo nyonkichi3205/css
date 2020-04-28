@@ -4,6 +4,12 @@ body {
   background-repeat: repeat;
 }
 
+/* 文字の大きさ（中） */
+p.middle{
+  font-size: 20px;
+  
+}
+
 /* メモクリップ */
 .clip-box-a {
  position: relative;

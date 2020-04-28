@@ -1,4 +1,5 @@
 body {
   background: url(https://nyonkichi3205.github.io/css/text_background.jpg);
+  background-repeat: x;
   min-width:100%;
 }

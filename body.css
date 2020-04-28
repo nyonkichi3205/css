@@ -42,14 +42,25 @@ body {
 }
 
 
-/* 見出し */
-h1 {
+/* 見出し（タイトル） */
+#title {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #ffffff;/*文字色*/
   background: #00bfff;/*背景色*/
-  border-left: solid 10px #ff8c00;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  text-align: center;
+}
+
+/* 見出し（題目） */
+#theme {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 10px #00bfff;/*左線*/
   border-bottom: solid 3px #d7d7d7;/*下線*/
 }
+
+.lesson_video { text-align: center; }
 
 /* 囲みタブ（内容） */
 .kakomi-tab2 {

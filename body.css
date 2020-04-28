@@ -1,3 +1,9 @@
+/* 背景画像 */
+body {
+  background: url(https://nyonkichi3205.github.io/css/text_background.jpg);
+  background-repeat: repeat;
+}
+
 /* メモクリップ */
 .clip-box-a {
  position: relative;

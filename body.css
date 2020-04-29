@@ -231,9 +231,9 @@ h1 {
 }
 .balloon_l .says:after {
   left: -26px;
-  border-right: 22px solid #99dddd;
+  border-right: 22px solid #edf1ee;
 }
 .balloon_r .says:after {
   right: -26px;
-  border-left: 22px solid #99dddd;
+  border-left: 22px solid #edf1ee;
 }

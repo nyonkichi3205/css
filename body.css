@@ -135,7 +135,7 @@ h1 {
  font-size: 25px; 
  width: 90%;
  background-color: #fff; /*BOX背景色 */
- border: 2px solid #00bfff; /* 枠線の太さ・色 */
+ border: 2px solid #d3d3d3; /* 枠線の太さ・色 */
  box-shadow: 2px 2px 2px #ccc; /* 影の色 */
 }
 /* 囲みタブ（タイトル） */

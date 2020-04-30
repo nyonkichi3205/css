@@ -206,6 +206,7 @@ h1 {
   order:2 !important;
 }
 .says_l {
+  font-weight: bold; 
   max-width:500px; /*最大幅は任意*/
   display: flex;
   flex-wrap: wrap;
@@ -237,6 +238,7 @@ h1 {
 
 /*吹き出し（ロボにゃん）*/
 .says_r {
+  font-weight: bold; 
   max-width:500px; /*最大幅は任意*/
   display: flex;
   flex-wrap: wrap;

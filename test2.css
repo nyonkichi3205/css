@@ -1,7 +1,7 @@
 /*以下、①背景色など*/
 .line-bc {
   padding: 20px 10px;
-  max-width: 450px;
+  max-width: 100%;
   margin: 15px auto;
   text-align: right;
   font-size: 14px;

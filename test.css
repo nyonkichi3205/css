@@ -28,23 +28,26 @@ img {
 .says {
   display: inline-block;
   position: relative; 
-  margin: 5px 0 0 105px;
-  padding: 17px 13px;
+  margin: 0 0 0 50px;
+  padding: 10px;
+  max-width: 250px;
   border-radius: 12px;
-  background: #d7ebfe;
+  background: #edf1ee;
 }
 
 .says:after {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 18px; 
-  left: -24px;
-  border: 12px solid transparent;
-  border-right: 12px solid #d7ebfe;
+  top: 3px; 
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
 }
-
 .says p {
   margin: 0;
   padding: 0;
 }
+

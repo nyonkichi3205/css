@@ -6,23 +6,23 @@ img {
 }
 .balloon {
   width: 100%;
-  margin: 1.5em 0;
+  margin: 10px 0;
   overflow: hidden;
 }
 
 .balloon .faceicon {
   float: left;
-  margin-right: -90px;
-  width: 80px;
+  margin-right: -50px;
+  width: 40px;
 }
 
 .balloon .faceicon img{
   width: 100%;
   height: auto;
 }
-
 .balloon .chatting {
   width: 100%;
+  text-align: left;
 }
 
 .says {

@@ -1,10 +1,16 @@
+img {
+width:100%;
+max-width: 100%;
+height: auto;
+}
+
 /*以下、①背景色など*/
 .line-bc {
   padding: 20px 10px;
   max-width: 100%;
   margin: 15px auto;
   text-align: right;
-  font-size: 14px;
+  font-size: 25px;
   background: #7da4cd;
 
 }
@@ -19,13 +25,12 @@
 .balloon6 .faceicon {
   float: left;
   margin-right: -50px;
-  width: 40px;
+  width: 80px;
 }
 
 .balloon6 .faceicon img{
   width: 100%;
   height: auto;
-  border-radius: 50%;
 }
 .balloon6 .chatting {
   width: 100%;

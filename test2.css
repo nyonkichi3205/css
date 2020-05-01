@@ -1,3 +1,11 @@
+
+img {
+width:100%;
+max-width: 100%;
+height: auto;
+}
+
+
 /*スマホの時は画像を小さく*/
 @media screen and (max-width: 440px){
 /*画像左側のチャット*/

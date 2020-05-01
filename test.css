@@ -1,50 +1,52 @@
-*, *:before, *:after {
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+img {
+ max-width: 100%;
+ max-height: 100%;
+ width: auto;
+ height: auto;
 }
-.cp_cssslider {
-width: 300px;
-padding-top: 200px; /* 画像の高さ */
-position: relative;
-margin: 2em auto;
-text-align: center;
+.balloon5 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
 }
-.cp_cssslider > img {
-position: absolute;
-left: 0;
-top: 0;
-transition: all 0.5s;
-border-radius: 3px;
-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
 }
-.cp_cssslider input[name='cp_switch'] {
-display: none;
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7ebfe;
+  border-radius: 50%;
 }
-/* サムネイル */
-.cp_cssslider label {
-margin: 145px 5px 0 5px;
-border: 2px solid #ffffff;
-display: inline-block;
-cursor: pointer;
-transition: all 0.5s ease;
-opacity: 0.6;
-border-radius: 3px;
+
+.balloon5 .chatting {
+  width: 100%;
 }
-.cp_cssslider label:hover {
-opacity: 0.9;
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
 }
-.cp_cssslider label img {
-display: block;
-width: 40px;
-border-radius: 2px;
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
 }
-.cp_cssslider input[name='cp_switch']:checked + label {
-border: 2px solid #FF7043;
-opacity: 1;
-}
-.cp_cssslider input[name='cp_switch'] ~ img {
-opacity: 0;
-}
-.cp_cssslider input[name='cp_switch']:checked + label + img {
-opacity: 1;
+
+.says p {
+  margin: 0;
+  padding: 0;
 }

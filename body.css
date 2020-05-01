@@ -1,3 +1,8 @@
+  img {
+	max-width: 100%;
+	height: auto;
+  }
+
 /* 背景画像 */
 body {
   background: url(https://nyonkichi3205.github.io/css/text_background.jpg);
@@ -303,10 +308,6 @@ p.middle{
   box-sizing:border-box;
   margin:0 !important;
   line-height:1.5;
-　 img{
-      height: 100%;
-      width: auto;
-      }
 /*   align-items: center; */
 }
 .says_l p{

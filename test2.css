@@ -66,6 +66,20 @@ height: auto;
 .mycomment {
   margin: 10px 0;
 }
+.mycomment .faceicon1 {
+  float: right;
+  margin-right: 0px;
+  width: 80px;
+}
+
+.mycomment .faceicon1 img{
+  width: 100%;
+  height: auto;
+}
+.mycomment .chatting {
+  width: 100%;
+  text-align: right;
+}
 .mycomment p {
   display: inline-block;
   position: relative; 
@@ -87,3 +101,4 @@ height: auto;
   -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg);
 }
+

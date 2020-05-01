@@ -303,6 +303,10 @@ p.middle{
   box-sizing:border-box;
   margin:0 !important;
   line-height:1.5;
+　 img{
+      height: 100%;
+      width: auto;
+      }
 /*   align-items: center; */
 }
 .says_l p{

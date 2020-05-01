@@ -16,87 +16,141 @@ img {
 
 }
 
-/*吹き出し（ねずボット）*/
-.balloon_l,
-.balloon_r{
-  margin: 30px 0;
-  display:flex;
+.oneArea {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start; /*縦位置を上揃え*/
-/*   align-items: center; */ /*縦位置を真ん中揃え*/
+  max-width: 1024px;
+  margin: 50px auto;
+  padding: 0 10px;
 }
-.balloon_r{
-  justify-content:flex-end;
-}
-.faceicon img{
-  width: 100%; /*任意のサイズ*/
-  height: auto;
-}
-.balloon_r .faceicon{
-  margin-left:25px;
-}
-.balloon_l .faceicon{
-  margin-right:25px;
-}
-.says_l {
-  font-weight: bold; 
-  max-width:500px; /*最大幅は任意*/
+.oneArea .onebox {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.oneArea .onebox:nth-child(even) {
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+.oneArea .onebox .imgArea {
+  width: 16%;
   position: relative;
-  padding: 17px 13px 15px 18px;
-  border-radius: 12px;
-  background: #e0ffff;/*色は任意*/
-  margin:0 !important;
-  line-height:1.5;
-
-/*   align-items: center; */
 }
-
-.says_l p{
-  margin:8px 0 0 !important; 
-}
-.says_l p:first-child{
-  margin-top:0 !important;
-}
-.says_l:after {
-  content: "";
+.oneArea .onebox .imgArea img {
+  width: 100%;
+  max-width: 130px;
   position: absolute;
-  border: 10px solid transparent;
-/*   margin-top:-3px;  */
+  top: 0;
 }
-.balloon_l .says_l:after {
-  left: -26px;
-  border-right: 22px solid #e0ffff;
+.oneArea .onebox:nth-child(odd) .imgArea img {
+  left: 0;
+  padding-right: 30px;
 }
-
-/*吹き出し（ロボにゃん）*/
-.says_r {
-  font-weight: bold; 
-  max-width:500px; /*最大幅は任意*/
-  display: flex;
-  flex-wrap: wrap;
+.oneArea .onebox:nth-child(even) .imgArea img {
+  right: 0;
+  padding-left: 30px;
+}
+.oneArea .onebox .fukiArea {
+  width: 63%;
+}
+.oneArea .onebox .fukidasi {
+  width: 100%;
   position: relative;
-  padding: 17px 13px 15px 18px;
+  padding: 25px;
+  background-color: #f2f3f7;
+  font-size: 18px;
+  color: #231815;
   border-radius: 12px;
-  background: #ffe4e1;/*色は任意*/
-  margin:0 !important;
-  line-height:1.5;
-/*   align-items: center; */
+  box-sizing: border-box;
 }
-.says_r p{
-  margin:8px 0 0 !important; 
-}
-.says_r p:first-child{
-  margin-top:0 !important;
-}
-.says_r:after {
-  content: "";
+.oneArea .onebox .fukidasi::before {
+  content: '';
   position: absolute;
-  border: 10px solid transparent;
-/*   margin-top:-3px;  */
+  display: block;
+  top: 22px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 30px 15px 0;
+  border-color: transparent #f2f3f7 transparent transparent;
 }
-.balloon_r .says_r:after {
-  right: -26px;
-  border-left: 22px solid #ffe4e1;
+.oneArea .onebox:nth-child(odd) .fukidasi::before {
+  left: -20px;
+}
+.oneArea .onebox:nth-child(even) .fukidasi {
+  background-color: #fde5e5;
+}
+.oneArea .onebox:nth-child(even) .fukidasi::before {
+  right: -20px;
+  border-color: transparent #fde5e5 transparent transparent;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 1024px) {
+  .oneArea .onebox .imgArea img {
+    max-width: 70%;
+  }
+  .oneArea .onebox .fukidasi {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .oneArea .onebox .fukidasi::before {
+    top: 8px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .oneArea {
+    margin: 30px auto;
+  }
+  .oneArea .onebox:nth-child(even) {
+    margin-top: 15px;
+  }
+  .oneArea .onebox .imgArea {
+    width: 20%;
+  }
+  .oneArea .onebox .fukidasi {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+
+/*====================================================================
+以下は不要です。
+====================================================================*/
+body {
+  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.section {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.section p._a {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.section p._a .link {
+  position: relative;
+  display: inline-block;
+  padding-left: 12px;
+  margin: 0;
+  color: #607D8B;
+}
+.section p._a .link:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #607D8B;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
 }

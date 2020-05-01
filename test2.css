@@ -4,109 +4,105 @@ img {
 }
 
 
-/*吹き出し(バルーン)のアウトライン*/
-.bln {
-    width: 100%;
-    margin: 10px auto;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-	align-items: center;
-    overflow: hidden;
+/*——————–
+ 吹き出しを作る
+——————–*/
+/* 全体のスタイル */
+.kaiwa {
+  margin-bottom: 25px;
 }
-@media (max-width:480px) {
-	.bln {
-		padding: 0;
-	}
-}
-
-/* 左右アイコンのイメージサイズと配置 */
-.bln:before {
-    content: "";
-    width: 90px;
-    height: 90px;
-    background: no-repeat left center / contain;
-    /* display: inline-block; */
-}
-@media (max-width:480px) {
-	.bln:before {
-		width: 80px;
-		height: 80px;
-	}
-}
-
-/* 左アイコンのイメージ配置 画像100~200pxくらいでok */
-.bln.dare-san:before {
-    background-image: url(img/dare-san.png) /*画像ファイル場所を記入してね*/
-}
-
-/* 右アイコンのイメージ配置 画像*/
-.bln.wan-san:before {
-    background-image: url(img/wan-san.png) /*画像ファイル場所を記入してね*/
-}
-
-/* 吹き出し中の文章アウトライン */
-.says {
-    position: relative;
-    margin: 1rem;
-    max-width: calc(100% - 170px);
-    padding: .6rem 1.2rem;
-    border: solid 2px #eee;
-    border-radius: 1.2rem;
-}
-@media (max-width:480px) {
-	.says {
-		margin: 0;
-		max-width: calc(100% - 125px);
-	}
-}
-
-/* 吹き出し口 尖ってるところのあしらい */
-.says::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -16px;
-    margin-top: -8px;
-    border: 8px solid transparent;
-    border-right: 10px solid #fff;
-    z-index: 2;
-}
-.says::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -21px;
-    margin-top: -9px;
-    border: 9px solid transparent;
-    border-right: 12px solid #eee;
-    z-index: 1;
-}
-
-/* 右のアイコン配置指定 吹き出し反転など */
-.bln.fxd--rr .says:before,
-.bln.fxd--rr .says:after {
-	transform: scale(-1, 1);
-	
-}
-
-/* 右のアイコンから 吹き出し反転 */
-.bln.fxd--rr .says:before {
-	left: inherit;
-	right: -16px;
-}
-.bln.fxd--rr .says:after {
-	left: inherit;
-    right: -21px;	
-}
-
-/*吹き出内の調整用*/
-.says p {
+/* 左画像 */
+.kaiwa-img-left {
   margin: 0;
-  padding: 0;
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: -70px;
 }
-
-/* 右の人にする時につける flex要素 */
-.fxd--rr {
-	flex-direction: row-reverse;
+/* 右画像 */
+.kaiwa-img-right {
+  margin: 0;
+  float: right;
+  width: 60px;
+  height: 60px;
+  margin-left: -70px;
+}
+.kaiwa figure img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin: 0;
+}
+/* 画像の下のテキスト */
+.kaiwa-img-description {
+  padding: 5px 0 0;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 15px;
+}
+/* 左からの吹き出しテキスト */
+.kaiwa-text-right {
+  position: relative;
+  margin-left: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #eee;
+  margin-right: 12%;
+  float: left;
+}
+/* 右からの吹き出しテキスト */
+.kaiwa-text-left {
+  position: relative;
+  margin-right: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #9cd6e7;
+  margin-left: 12%;
+  float: right;
+}
+p.kaiwa-text {
+  margin: 0 0 20px;
+}
+p.kaiwa-text:last-child {
+  margin-bottom: 0;
+}
+/* 左の三角形を作る */
+.kaiwa-text-right:before {
+  position: absolute;
+  content: '';
+  border: 10px solid transparent;
+  top: 15px;
+  left: -20px;
+}
+.kaiwa-text-right:after {
+  position: absolute;
+  content: '';
+  border: 10px solid transparent;
+  border-right: 10px solid #eee;
+  top: 15px;
+  left: -19px;
+}
+/* 右の三角形を作る */
+.kaiwa-text-left:before {
+  position: absolute;
+  content: '';
+  border: 10px solid transparent;
+  top: 15px;
+  right: -20px;
+}
+.kaiwa-text-left:after {
+  position: absolute;
+  content: '';
+  border: 10px solid transparent;
+  border-left: 10px solid #9cd6e7;
+  top: 15px;
+  right: -19px;
+}
+/* 回り込み解除 */
+.kaiwa:after,.kaiwa:before {
+  clear: both;
+  content: "";
+  display: block;
 }

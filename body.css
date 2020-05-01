@@ -248,6 +248,10 @@ p.middle{
   box-sizing:border-box;
   margin:0 !important;
   line-height:1.5;
+  img {
+	max-width: 100%;
+	height: auto;
+  }
 /*   align-items: center; */
 }
 .says_l p{

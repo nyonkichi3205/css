@@ -4,26 +4,24 @@ img {
  width: auto;
  height: auto;
 }
-.balloon5 {
+.balloon {
   width: 100%;
   margin: 1.5em 0;
   overflow: hidden;
 }
 
-.balloon5 .faceicon {
+.balloon .faceicon {
   float: left;
   margin-right: -90px;
   width: 80px;
 }
 
-.balloon5 .faceicon img{
+.balloon .faceicon img{
   width: 100%;
   height: auto;
-  border: solid 3px #d7ebfe;
-  border-radius: 50%;
 }
 
-.balloon5 .chatting {
+.balloon .chatting {
   width: 100%;
 }
 

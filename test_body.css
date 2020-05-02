@@ -1,0 +1,352 @@
+@media screen and (max-width: 1024px) {
+/* 1024pxまでの幅の場合に適応される */
+    body {
+        background-color:#2262D1;
+    }
+  #title {
+  
+  }
+}
+@media screen and (max-width: 768px) {
+/* 768pxまでの幅の場合に適応される */
+     body {
+        background-color:#f10010;
+    }
+}
+@media screen and (max-width: 480px) {
+/* 480pxまでの幅の場合に適応される */
+    body {
+        background-color:#F9DF2C;
+    }
+}
+@media screen and (max-width: 320px) {
+/* 320pxまでの幅の場合に適応される */
+    body {
+        background-color: #68B876;
+    }
+
+}
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 背景画像 
+body {
+  background: url(https://nyonkichi3205.github.io/css/text_background.jpg);
+  background-repeat: repeat;
+}
+*/
+
+/* 文字の大きさ（中） */
+p.middle{
+  font-size: 20px;
+
+}
+
+/* メモクリップ */
+.clip-box-a {
+ position: relative;
+ margin: 2em auto;
+ padding: 15px 35px 15px 25px;
+ width: 90%; /* ボックス幅 */
+ background-color: #fff; /* ボックス背景色 */
+ color: #555555; /* 文章色 */
+ font-weight: bold;
+ font-size: 20px;
+ border: 1px solid #ccc; /* 枠線 */
+ box-shadow: 1px 1px 1px #acacac; /* 影の色 */
+}
+.clip-box-a::before {
+ position: absolute;
+ content: '';
+ top: -15px;
+ right: 10px;
+ height: 55px;
+ width: 15px;
+ border: 3px solid #555555; /*クリップ色 */
+ background-color: none;
+ border-radius: 12px;
+ box-shadow: 1px 1px 2px #999;
+ transform: rotate(10deg);
+ z-index: 1;
+}
+.clip-box-a::after {
+ position: absolute;
+ content: '';
+ top: 0px;
+ width: 10px;
+ right: 20px;
+ border: solid 5px #fff; /*背景色と同じ色にする*/
+ z-index: 2;
+}
+
+/* 黒板 */
+.blackboard-box{
+  background: #104300;
+  margin: 1em 0;
+  padding: 1em 1em 0 1em;
+  border: 8px solid #a60;
+  box-shadow: 2px 2px 4px #999, 2px 2px 2px #020 inset;
+}
+
+.blackboard-box p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 0px 0px 2px #fff;
+  font-size: 25px;
+}
+.chalk1{
+  display: block;
+  margin-top: 10px;
+  margin-left: 90%;
+  border: solid 3px #fff;
+  width: 15px;
+  border-radius: 3px 2px 0 2px;
+}
+.chalk2{
+  display: block;
+  margin-top: -6px;
+  margin-left: calc(90% - 30px);
+  border: solid 3px #ff69b4;
+  width: 20px;
+  border-radius: 3px 2px 0 2px;
+}
+
+
+
+/* 見出し（タイトル） */
+#title {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #ffffff;/*文字色*/
+  background: #ff6347;/*背景色*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  border-radius: 8px;
+  text-align: center;
+  border-left: solid 15px #ffaf58;
+  border-right: solid 15px #ffaf58;
+  font-size: 3.5vw;
+}
+
+/* 見出し（題目） */
+#theme {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-radius: 8px;
+  border-left: solid 10px #ff6347;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  font-size: 4vw;
+  
+}
+
+
+/* 囲みタブ（内容） */
+.kakomi-tab2 {
+ position: relative;
+ margin: 3em auto;
+ padding: 1.2em 1em 1em;
+ font-weight: bold;
+ color: #555555;/*文字色*/
+ font-size: 25px;
+ width: 90%;
+ background-color: #fff; /*BOX背景色 */
+ border: 2px solid #d3d3d3; /* 枠線の太さ・色 */
+ box-shadow: 2px 2px 2px #ccc; /* 影の色 */
+ font-size: 3vw;
+}
+/* 囲みタブ（タイトル） */
+.title-tab2 {
+ position: absolute;
+ display: inline-block;
+ top: -31px; /*タブ調整 */
+ left: -2px; /*タブ調整 */
+ padding: 1px 10px;
+ height: 30px;
+ font-weight: bold;
+ font-size: 3vw;
+ color: #fff; /* タイトル色 */
+ background-color: #d3d3d3; /* タイトル背景色 */
+ border-radius: 8px 8px 0 0;
+}
+
+
+/*アコーディオン（赤）*/
+.cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	color: #ffffff;
+}
+.cp_actab input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_actab label {
+  font-size: 3vw;
+	font-weight: bold;
+	line-height: 3;
+	position: relative;
+	display: block;
+	padding: 0 0 0 1em;
+	cursor: pointer;
+	margin: 0 0 1px 0;
+	background: #da3c41;
+}
+.cp_actab .cp_actab-content {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.35s;
+	transition: max-height 0.35s;
+	color: #333333;
+	background: #f1c6c6;
+}
+.cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* :checked */
+.cp_actab input:checked ~ .cp_actab-content {
+	max-height: none;
+}
+/* Icon */
+.cp_actab label::after {
+	line-height: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	text-align: center;
+}
+.cp_actab input[type=checkbox] + label::after {
+	content: '+';
+}
+.cp_actab input[type=checkbox]:checked + label::after {
+	transform: rotate(315deg);
+}
+
+
+
+/*背景（吹き出し）*/
+.line-bc {
+ margin: 2em auto;
+ padding: 1em 1.5em;
+ width: 90%; /*幅の調節*/
+ color: #777777; /* 文字色 */
+ background-color: #fff; /* 背景色 */
+ border: 4px solid #f6bfbc; /*線の太さ・色*/
+ border-radius: 3em .8em 3em .7em/.9em 2em .8em 3em;
+ font-size: 2vw;
+
+}
+
+/*吹き出し（ねずボット）*/
+.balloon_l,
+.balloon_r{
+  margin: 30px 0;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start; /*縦位置を上揃え*/
+/*   align-items: center; */ /*縦位置を真ん中揃え*/
+}
+.balloon_r{
+  justify-content:flex-end;
+}
+.faceicon img{
+  width: 80px; /*任意のサイズ*/
+  height: auto;
+}
+.balloon_r .faceicon{
+  margin-left:25px;
+}
+.balloon_l .faceicon{
+  margin-right:25px;
+}
+.balloon_r .faceicon{
+  order:2 !important;
+}
+.says_l {
+  font-weight: bold;
+  max-width:500px; /*最大幅は任意*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
+  border-radius: 12px;
+  background: #e0ffff;/*色は任意*/
+  box-sizing:border-box;
+  margin:0 !important;
+  line-height:1.5;
+
+/*   align-items: center; */
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.says_l p{
+  margin:8px 0 0 !important;
+}
+.says_l p:first-child{
+  margin-top:0 !important;
+}
+.says_l:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+/*   margin-top:-3px;  */
+}
+.balloon_l .says_l:after {
+  left: -26px;
+  border-right: 22px solid #e0ffff;
+}
+
+/*吹き出し（ロボにゃん）*/
+.says_r {
+  font-weight: bold;
+  max-width:500px; /*最大幅は任意*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
+  border-radius: 12px;
+  background: #ffe4e1;/*色は任意*/
+  box-sizing:border-box;
+  margin:0 !important;
+  line-height:1.5;
+/*   align-items: center; */
+}
+.says_r p{
+  margin:8px 0 0 !important;
+}
+.says_r p:first-child{
+  margin-top:0 !important;
+}
+.says_r:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+/*   margin-top:-3px;  */
+}
+.balloon_r .says_r:after {
+  right: -26px;
+  border-left: 22px solid #ffe4e1;
+}

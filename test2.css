@@ -9,9 +9,8 @@ height: auto;
   padding: 20px 10px;
   max-width: 100%;
   margin: 15px auto;
-  text-align: right;
-  font-size: 25px;
-  background: #7da4cd;
+  font-size: 15px;
+  background: #ffffff;
 
 }
 
@@ -39,9 +38,9 @@ height: auto;
 .says {
   display: inline-block;
   position: relative; 
-  margin: 0 0 0 50px;
+  margin: 0 0 0 60px;
   padding: 10px;
-  max-width: 250px;
+  max-width: 300px;
   border-radius: 12px;
   background: #edf1ee;
 }
@@ -85,10 +84,10 @@ height: auto;
   position: relative; 
   margin: 0 10px 0 0;
   padding: 8px;
-  max-width: 250px;
+  max-width: 300px;
   border-radius: 12px;
   background: #30e852;
-  font-size: 15px:
+  text-align: left
 }
 
 .mycomment p:after {
@@ -101,4 +100,3 @@ height: auto;
   -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg);
 }
-

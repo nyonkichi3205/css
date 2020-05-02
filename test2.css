@@ -69,11 +69,11 @@ height: auto;
 .right_balloon .faceicon {
   float: right;
   margin-right: 0px;
-  width: 80px;
+  max-width: 100%; /* 最大幅 */
 }
 
 .right_balloon .faceicon img{
-  width: 100%;
+  max-width: 80px;
   height: auto;
 }
 .right_balloon .chatting {

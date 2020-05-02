@@ -178,7 +178,12 @@ p.middle{
   width: 20px;
   border-radius: 3px 2px 0 2px;
 }
-
+.point {
+    color: #ffb1b3;
+    font-weight: bold;
+    border: 2px solid #ffb1b3;
+    font-size: 3vw;
+}
 
 
 /* 見出し（タイトル） */

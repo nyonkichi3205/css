@@ -298,3 +298,21 @@ img {
   right: -26px;
   border-left: 22px solid #ffe4e1;
 }
+
+/*youtubeレイアウト*/
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

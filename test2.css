@@ -43,7 +43,7 @@ height: auto;
   position: relative; 
   margin: 0 0 0 60px;
   padding: 8px;
-  max-width: 300px;
+  max-width: 60%;
   border-radius: 12px;
   background: #e0ffff;
   text-align: left
@@ -90,7 +90,7 @@ height: auto;
   position: relative; 
   margin: 0 10px 0 0;
   padding: 8px;
-  max-width: 300px;
+  max-width: 60%;
   border-radius: 12px;
   background: #ffe4e1;
   text-align: left

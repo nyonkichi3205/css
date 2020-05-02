@@ -54,7 +54,7 @@ height: auto;
   top: 3px; 
   left: -19px;
   border: 8px solid transparent;
-  border-right: 18px solid #edf1ee;
+  border-right: 18px solid #e0ffff;
   -webkit-transform: rotate(35deg);
   transform: rotate(35deg);
 }
@@ -99,7 +99,7 @@ height: auto;
   top: 3px; 
   right: -19px;
   border: 8px solid transparent;
-  border-left: 18px solid #30e852;
+  border-left: 18px solid #ffe4e1;
   -webkit-transform: rotate(-35deg);
   transform: rotate(-35deg);
 }

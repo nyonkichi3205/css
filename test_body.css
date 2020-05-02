@@ -3,14 +3,7 @@
   font-size: 3vw;
 }
 
-@media screen and (min-width: 800px) {
-    h1 {
-        font-size:30px!important;
-    }
-      div {
-        font-size:20px!important;
-    }
-}
+
 @media screen and (max-width: 1024px) {
 /* 1024pxまでの幅の場合に適応される */
     #formatsize {

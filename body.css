@@ -7,7 +7,7 @@ body {
 /* 文字の大きさ（中） */
 p.middle{
   font-size: 20px;
-  
+
 }
 
 /* メモクリップ */
@@ -41,7 +41,7 @@ p.middle{
  position: absolute;
  content: '';
  top: 0px;
- width: 10px; 
+ width: 10px;
  right: 20px;
  border: solid 5px #fff; /*背景色と同じ色にする*/
  z-index: 2;
@@ -112,7 +112,7 @@ p.middle{
  padding: 1.2em 1em 1em;
  font-weight: bold;
  color: #555555;/*文字色*/
- font-size: 25px; 
+ font-size: 25px;
  width: 90%;
  background-color: #fff; /*BOX背景色 */
  border: 2px solid #d3d3d3; /* 枠線の太さ・色 */
@@ -194,16 +194,9 @@ p.middle{
 
 
 
-  
-img {
-width:100%;
-max-width: 100%;
-height: auto;
-}
-
-/*以下、①背景色など*/
+/*背景（吹き出し）*/
 .line-bc {
- margin: 2em auto; 
+ margin: 2em auto;
  padding: 1em 1.5em;
  width: 90%; /*幅の調節*/
  color: #777777; /* 文字色 */
@@ -213,97 +206,95 @@ height: auto;
 
 }
 
-/*（ねずボット）左側のコメント*/
-.left_balloon {
-  width: 100%;
-  margin: 10px 0;
-
+/*吹き出し（ねずボット）*/
+.balloon_l,
+.balloon_r{
+  margin: 30px 0;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start; /*縦位置を上揃え*/
+/*   align-items: center; */ /*縦位置を真ん中揃え*/
 }
-
-.left_balloon .faceicon {
-  float: left;
-  margin-right: -50px;
-  max-width: 15%;
+.balloon_r{
+  justify-content:flex-end;
 }
-
-.left_balloon .faceicon img{
-  max-width: 80px;
+.faceicon img{
+  width: 80px; /*任意のサイズ*/
   height: auto;
 }
-.left_balloon .chatting {
-  width: 100%;
-  text-align: left;
+.balloon_r .faceicon{
+  margin-left:25px;
 }
-.left_says {
-  display: inline-block;
-  position: relative; 
-  margin: 0 0 0 60px;
-  padding: 8px;
-  max-width: 50%;
+.balloon_l .faceicon{
+  margin-right:25px;
+}
+.balloon_r .faceicon{
+  order:2 !important;
+}
+.says_l {
+  font-weight: bold;
+  max-width:500px; /*最大幅は任意*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
   border-radius: 12px;
-  background: #e0ffff;
-  text-align: left
-}
+  background: #e0ffff;/*色は任意*/
+  box-sizing:border-box;
+  margin:0 !important;
+  line-height:1.5;
 
-.left_says:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 3px; 
-  left: -19px;
-  border: 8px solid transparent;
-  border-right: 18px solid #e0ffff;
-  -webkit-transform: rotate(35deg);
-  transform: rotate(35deg);
+/*   align-items: center; */
 }
-.left_says p {
-  margin: 0;
-  padding: 0;
+img {
+	max-width: 100%;
+	height: auto;
 }
-
-/*（ロボにゃん）右側のコメント*/
-.right_balloon {
-  width: 100%;
-  margin: 10px 0;
-
+.says_l p{
+  margin:8px 0 0 !important;
 }
-.right_balloon .faceicon {
-  float: right;
-  margin-right: 0px;
-  max-width: 15%; /* 最大幅 */
+.says_l p:first-child{
+  margin-top:0 !important;
 }
-
-.right_balloon .faceicon img{
-  max-width: 80px;
-  height: auto;
-}
-.right_balloon .chatting {
-  width: 100%;
-  text-align: right;
-}
-.right_says{
-  display: inline-block;
-  position: relative; 
-  margin: 0 10px 0 0;
-  padding: 8px;
-  max-width: 50%;
-  border-radius: 12px;
-  background: #ffe4e1;
-  text-align: left
-}
-
-.right_says:after {
+.says_l:after {
   content: "";
   position: absolute;
-  top: 3px; 
-  right: -19px;
-  border: 8px solid transparent;
-  border-left: 18px solid #ffe4e1;
-  -webkit-transform: rotate(-35deg);
-  transform: rotate(-35deg);
+  border: 10px solid transparent;
+/*   margin-top:-3px;  */
+}
+.balloon_l .says_l:after {
+  left: -26px;
+  border-right: 22px solid #e0ffff;
 }
 
-.right_says p {
-  margin: 0;
-  padding: 0;
+/*吹き出し（ロボにゃん）*/
+.says_r {
+  font-weight: bold;
+  max-width:500px; /*最大幅は任意*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
+  border-radius: 12px;
+  background: #ffe4e1;/*色は任意*/
+  box-sizing:border-box;
+  margin:0 !important;
+  line-height:1.5;
+/*   align-items: center; */
+}
+.says_r p{
+  margin:8px 0 0 !important;
+}
+.says_r p:first-child{
+  margin-top:0 !important;
+}
+.says_r:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+/*   margin-top:-3px;  */
+}
+.balloon_r .says_r:after {
+  right: -26px;
+  border-left: 22px solid #ffe4e1;
 }

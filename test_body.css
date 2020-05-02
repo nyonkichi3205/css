@@ -1,32 +1,4 @@
-/* 画面サイズチェック用 */
-#formatsize{
-  font-size: 3vw;
-}
 
-
-@media screen and (max-width: 1024px) {
-/* 1024pxまでの幅の場合に適応される */
-    #formatsize {
-        background:#2262D1;
-}
-@media screen and (max-width: 768px) {
-/* 768pxまでの幅の場合に適応される */
-     #formatsize {
-        background:#f10010;
-    }
-}
-@media screen and (max-width: 480px) {
-/* 480pxまでの幅の場合に適応される */
-    #formatsize {
-        background-color:#F9DF2C;
-    }
-}
-@media screen and (max-width: 320px) {
-/* 320pxまでの幅の場合に適応される */
-    #formatsize {
-        background-color: #68B876;
-    }
-}
 	
 .youtube {
     position: relative;

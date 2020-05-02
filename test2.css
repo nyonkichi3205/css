@@ -15,23 +15,23 @@ height: auto;
 }
 
 /*以下、②左側のコメント*/
-.balloon6 {
+.left_balloon {
   width: 100%;
   margin: 10px 0;
   overflow: hidden;
 }
 
-.balloon6 .faceicon {
+.left_balloon .faceicon {
   float: left;
   margin-right: -50px;
   width: 80px;
 }
 
-.balloon6 .faceicon img{
+.left_balloon .faceicon img{
   width: 100%;
   height: auto;
 }
-.balloon6 .chatting {
+.left_balloon .chatting {
   width: 100%;
   text-align: left;
 }
@@ -61,25 +61,26 @@ height: auto;
   padding: 0;
 }
 
+
 /*以下、③右側の緑コメント*/
-.mycomment {
+.right_balloon {
   margin: 10px 0;
 }
-.mycomment .faceicon1 {
+.right_balloon .faceicon {
   float: right;
   margin-right: 0px;
-  width: 80px;
+  max-width: 100%; /* 最大幅 */
 }
 
-.mycomment .faceicon1 img{
-  width: 100%;
+.right_balloon .faceicon img{
+  max-width: 80px;
   height: auto;
 }
-.mycomment .chatting {
+.right_balloon .chatting {
   width: 100%;
   text-align: right;
 }
-.mycomment p {
+.right_balloon p {
   display: inline-block;
   position: relative; 
   margin: 0 10px 0 0;
@@ -90,7 +91,7 @@ height: auto;
   text-align: left
 }
 
-.mycomment p:after {
+.right_balloon p:after {
   content: "";
   position: absolute;
   top: 3px; 

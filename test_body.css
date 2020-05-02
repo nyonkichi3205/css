@@ -115,7 +115,7 @@ p.middle{
  z-index: 0;
 }
 .memo:after{
- font-size:3vw;
+ font-size:1.5vw;
  font-weight:bold;
  background-color: #d9ccb3; /* マステ部分の色1 */
  background-image: linear-gradient(45deg, #dfd4be 25%, transparent 25%, transparent 75%, #dfd4be 75%, #dfd4be), linear-gradient(45deg, #dfd4be 25%, transparent 25%, transparent 75%, #dfd4be 75%, #dfd4be); /* マステ部分の色2 */

@@ -1,3 +1,8 @@
+/* 画面サイズチェック用 */
+#formatsize{
+  font-size: 3vw;
+}
+
 @media screen and (max-width: 1024px) {
 /* 1024pxまでの幅の場合に適応される */
     #formatsize {

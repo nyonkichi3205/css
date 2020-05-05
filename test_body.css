@@ -69,6 +69,16 @@ p.middle{
 
 }
 
+/* ルビの大きさ行間 */
+ruby {
+	ruby-align: center;
+}
+rt {
+	letter-spacing: -.2em;
+	text-align: center;
+  font-size: 5%;
+}
+
 /* メモクリップ */
 .clip-box-a {
  position: relative;

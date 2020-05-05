@@ -71,11 +71,11 @@ p.middle{
 
 /* ルビの大きさ行間 */
 ruby {
-	ruby-align: center;
+  ruby-align: center;
 }
 rt {
-	letter-spacing: -.2em;
-	text-align: center;
+  letter-spacing: -.2em;
+  text-align: center;
   font-size: 5%;
 }
 

@@ -286,6 +286,7 @@ summary {
     color:#ffffff;
     margin: -.3em -.3em 0;
     padding: .5em;
+    text-align:center
 }
 summary::-webkit-details-marker {
     display:none;

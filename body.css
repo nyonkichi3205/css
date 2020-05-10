@@ -60,6 +60,25 @@
     height: 100%;
 }
 
+/* 点滅 */
+.blinking{ 
+	-webkit-animation:blink 0.8s ease-in-out infinite alternate;
+    	-moz-animation:blink 0.8s ease-in-out infinite alternate;
+    	animation:blink 0.8s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 /* 背景画像 
 body {
   background: url(https://nyonkichi3205.github.io/css/text_background.jpg);
@@ -268,6 +287,7 @@ summary {
     color:#ffffff;
     margin: -.3em -.3em 0;
     padding: .5em;
+    text-align:center;
 }
 summary::-webkit-details-marker {
     display:none;
